@@ -13,7 +13,7 @@ describe('First Test', () => {
     testVariable.a = true;
 
     // assert
-    expect(testVariable.a).toBe(false);
+    expect(testVariable.a).toBe(true);
   });
 });
 
