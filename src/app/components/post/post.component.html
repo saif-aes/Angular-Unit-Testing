@@ -1,0 +1,5 @@
+<div *ngIf="ip_post">
+  <a [routerLink]="['detail',ip_post.id]">{{ip_post.title}}</a>
+
+  <button (click)="onDeletePost($event)">Delete Post</button>
+</div>

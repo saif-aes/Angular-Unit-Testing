@@ -26,6 +26,8 @@ export class PostsComponent implements OnInit {
   delete(post: Post) {
     this.posts = this.posts.filter((p) => p.id !== post.id);
 
+    console.log('parent clicked');
+
     this.postService.deletePost(post).subscribe((res) => {
       console.log('delete API response:', res);
     });
